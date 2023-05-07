@@ -8,6 +8,45 @@
     <title>Sign Up</title>
 </head>
 <body>
-    <h1></h1>
+    <main>
+        <div class="photo">
+            <img src="./halie-west-25xggax4bSA-unsplash.jpg" alt="">
+        </div>
+        <div class="form">
+            <form action="#" method="post">
+            <h1>Let's do this!</h1>
+            <div class="items">
+                
+                <div class="item">
+                    <label for="firstName">First Name</label>
+                    <input required title="Minimum 2 characters A-Z a-z" type="text" name="firstName" id="firstName" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+                </div>
+                <div class="item">
+                    <label for="lastName">Last Name</label>
+                    <input required title="Minimum 2 characters A-Z a-z" type="text" name="lastName" id="lastName" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+                </div>
+                <div class="item">
+                    <label for="mail">E-Mail</label>
+                    <input required type="email" name="mail" id="mail">
+                </div>
+                <div class="item">
+                    <label for="phone">Phone Number</label>
+                    <input required title="Dont use +. Only numbers" type="tel" name="phone" id="phone" pattern="([1-9])+(?:-?\d){4,}">
+                </div>
+                <div class="item">
+                    <label for="pass">Password</label>
+                    <input required title="Minimum 8 characters. Minimum one Upper character" type="password" name="pass" id="pass" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                </div>
+                <div class="item">
+                    <label for="passConfirm">Confirm Password</label>
+                    <input required title="Password must match" type="password" name="passConfirm" id="passConfirm" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                </div>
+            </div>       
+            <br>
+            <button class="btn" type="submit">Create Account</button>
+        </form>
+        <p class="logInfo">Already have an account? <a class="login" href="#">Log In</a></p>
+        </div>
+    </main>
 </body>
 </html>

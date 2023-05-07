@@ -1,3 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color: rgb(0, 81, 0);
+}
+body{
+    background-color:rgb(247, 247, 247)
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+.form{
+    margin: auto 0;
+}
 h1{
-    color: red;
+    margin-bottom: 10px;
+}
+form{
+    background-color: white;
+    padding: 20px 50px;
+    box-shadow: 0px 10px 5px 0px rgba(209,209,209,0.75);
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    width: 100%;
+}
+.item{
+    width: 260px;
+}
+.photo{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    max-width: 500px;
+    overflow: hidden;
+}
+img{
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+}
+label{
+    display: inline-block;
+    text-transform: uppercase;
+    display: block;
+}
+.btn{
+    background-color: var(--color);
+    border: 0;
+    cursor: pointer;
+    color: white;
+    border-radius: 8px;
+    padding: 12px 50px;
+    display: inline-block;
+}
+input{
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+
+}
+
+input:valid{
+    border-color: green;
+}
+
+input:invalid{
+    border-color: red;
+}
+
+.logInfo{
+    margin-top: 20px;
+    padding-left: 50px;
+}
+.login{
+    color: var(--color);
+    font-weight: 700;
+    text-decoration: none;
+}
+.login:visited{
+    color: var(--color);
 }
