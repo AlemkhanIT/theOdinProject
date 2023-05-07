@@ -39,12 +39,28 @@ form{
     height: 100vh;
     max-width: 500px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
-img{
+.background{
     position: absolute;
     height: 100vh;
     top: 0;
     bottom: 0;
+}
+.logoContainer{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.350);
+    margin: auto;
+    width: 100%;
+    max-height: 200px;
+    height: 100%;
+    z-index: 2;
+    text-align: center;
+}
+.logo{
+    height: 100%;
+    z-index: 2;
 }
 label{
     display: inline-block;
@@ -66,10 +82,6 @@ input{
     width: 250px;
     height: 30px;
 
-}
-
-input:valid{
-    border-color: green;
 }
 
 input:invalid{
